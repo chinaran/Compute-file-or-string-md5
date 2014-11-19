@@ -40,6 +40,12 @@ int main(int argc, char *argv[])
 	return 0;
 }
 
+/**
+ * compute the value of a string
+ * @param  dest_str
+ * @param  dest_len
+ * @param  md5_str
+ */
 int Compute_string_md5(unsigned char *dest_str, unsigned int dest_len, char *md5_str)
 {
 	int i;
@@ -61,6 +67,12 @@ int Compute_string_md5(unsigned char *dest_str, unsigned int dest_len, char *md5
 	return 0;
 }
 
+/**
+ * compute the value of a file
+ * @param  file_path
+ * @param  md5_str
+ * @return 0: ok, -1: fail
+ */
 int Compute_file_md5(const char *file_path, char *md5_str)
 {
 	int i;
