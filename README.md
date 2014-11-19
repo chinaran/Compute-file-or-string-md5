@@ -10,6 +10,7 @@ $ gcc main_md5.c md5.c -Wall -o md5_test
 $ ./md5_test
 
 // you may get following:
+
 	[file - md5.c] md5 value:
 	
 	2a2caf52cb298f177a57a3211213e141
