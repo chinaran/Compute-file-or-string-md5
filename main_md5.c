@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", md5_str);
 	}
 
-	// test string md5
+	// test string md5 
 	Compute_string_md5((unsigned char *)test_str, strlen(test_str), md5_str);
 	printf("[string - %s] md5 value:\n", test_str);
 	printf("%s\n", md5_str);
