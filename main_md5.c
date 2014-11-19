@@ -59,6 +59,7 @@ int Compute_string_md5(unsigned char *dest_str, unsigned int dest_len, char *md5
 
 	MD5Final(&md5, md5_value);
 
+	// convert md5 value to md5 string
 	for(i = 0; i < MD5_SIZE; i++)
 	{
 		snprintf(md5_str + i*2, 2+1, "%02x", md5_value[i]);
@@ -113,6 +114,7 @@ int Compute_file_md5(const char *file_path, char *md5_str)
 
 	MD5Final(&md5, md5_value);
 
+	// convert md5 value to md5 string
 	for(i = 0; i < MD5_SIZE; i++)
 	{
 		snprintf(md5_str + i*2, 2+1, "%02x", md5_value[i]);
