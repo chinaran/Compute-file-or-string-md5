@@ -1,5 +1,5 @@
 Compute-file-or-string-md5 - C
-==============================
+================================
 
 Compute md5 value of file or string.
 
