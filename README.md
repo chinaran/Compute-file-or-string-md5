@@ -25,3 +25,5 @@ $ md5sum md5.c
 
 2a2caf52cb298f177a57a3211213e141  md5.c
 
+// Last: 16-digit md5 is the middle of 32-digit md5
+
