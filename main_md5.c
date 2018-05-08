@@ -99,6 +99,7 @@ int Compute_file_md5(const char *file_path, char *md5_str)
 		if (-1 == ret)
 		{
 			perror("read");
+			close(fd);
 			return -1;
 		}
 
