@@ -83,7 +83,11 @@ int Compute_file_md5(const char *file_path, char *md5_str)
 	unsigned char md5_value[MD5_SIZE];
 	MD5_CTX md5;
 
+#ifdef WIN32
+	fd = open(file_path, O_RDONLY | O_BINARY);
+#elif
 	fd = open(file_path, O_RDONLY);
+#endif
 	if (-1 == fd)
 	{
 		perror("open");
